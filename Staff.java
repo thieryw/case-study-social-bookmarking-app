@@ -1,18 +1,42 @@
 
 public class Staff extends User{
 
+    private int staffId;
+    private int penisLength;
 
 
-    public Staff(){
+    public Staff(int id){
+        super(id);
         userType = "staff";
-        id = 2;
     }
 
-   /* public void displayUserInfo(){
-        System.out.println(id);
-        System.out.println(userType);
+    public Staff(int id, String name){
+        super(id, name);
+        userType = "staff";
     }
-*/
+
+    public Staff(int id, String name, String email){
+        super(id, name, email);
+        userType = "staff";
+    }
+
+    public Staff(int id, String name, String email, int staffId){
+        super(id, name, email);
+        this.staffId = staffId;
+        userType = "staff";
+    }
+
+    public Staff(int id, String name, String email, int staffId, int penisLength){
+        this(id, name, email, staffId);
+        this.penisLength = penisLength;
+        userType = "staff";
+    }
+
+
+    public void displayUserInfo(){
+        System.out.println(this + " : staff id : " + staffId + " : " + penisLength);
+    }
+
 
 
     public void printUserType(){

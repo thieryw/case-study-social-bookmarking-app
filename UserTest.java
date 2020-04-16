@@ -8,7 +8,7 @@ public class UserTest {
 
 
     public static void main(String[] args) {
-        User u = new User();
+    /*    User u = new User();
         User s = new Staff();
         User e = new Editor();
 
@@ -48,8 +48,23 @@ public class UserTest {
 
         User s2 = new Staff();
 
-        System.out.println(s.equals(s2));
+        System.out.println(s.equals(s2));*/
 
+        User staff = new Staff(1, "william", "william@email.com", 10);
+
+        User staff2 = new Staff(2, "joseph", "joseph@email.com", 11, 25);
+
+        User user = new User(3, "alexy", "alexy@email.com");
+
+        User editor = new Editor(4, "florian", "florian@email.com", 12, 44);
+
+        staff.displayUserInfo();
+
+        staff2.displayUserInfo();
+
+        user.displayUserInfo();
+
+        editor.displayUserInfo();
         
 
 
