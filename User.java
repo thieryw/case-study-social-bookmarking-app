@@ -24,6 +24,10 @@ public class User {
 
     }
 
+    public boolean equals(User u){
+        return this.id == u.id && this.userType == u.userType;
+    }
+
     public Review postAReview(String reviewText){
 
         System.out.println("User: postAReview");

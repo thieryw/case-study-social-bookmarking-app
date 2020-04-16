@@ -44,6 +44,12 @@ public class UserTest {
 
         u.displayUserInfo();
 
+        System.out.println(s.equals(u));
+
+        User s2 = new Staff();
+
+        System.out.println(s.equals(s2));
+
         
 
 
