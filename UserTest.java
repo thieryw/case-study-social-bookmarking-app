@@ -38,8 +38,11 @@ public class UserTest {
 
         }
 
+        System.out.println("\n\n\n");
 
+        s.displayUserInfo();
 
+        u.displayUserInfo();
 
         
 
